@@ -1,0 +1,224 @@
+:root {
+  --width-sidebar: 200px;
+}
+
+.aside-dashboard {
+  z-index: 2000;
+  padding: 0px;
+  position: fixed;
+  width: var(--width-sidebar);
+  bottom: 0;
+  left: 0px;
+  top: 0px;
+  transition: all 0.5s;
+}
+.overlay-sidebar {
+  z-index: 1000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgb(0, 0, 0, 0.5);
+  display: none;
+}
+@media (max-width: 991.98px) {
+  .aside-dashboard {
+    margin-left: calc(0px - var(--width-sidebar));
+  }
+  .aside-dashboard.closed_sidebar {
+    margin-left: 0 !important;
+  }
+}
+@media (max-width: 993px) {
+  .overlay-sidebar-show {
+    display: block;
+  }
+}
+@media (min-width: 992px) {
+  .aside-dashboard.closed_sidebar {
+    width: 80px;
+  }
+  .aside-dashboard.closed_sidebar .right-link {
+    display: none;
+  }
+  .aside-dashboard.closed_sidebar .submenu-nav {
+    display: block;
+    opacity: 0;
+    pointer-events: none;
+    padding: 0px !important;
+  }
+  .aside-dashboard.closed_sidebar .main .perfil-user > img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .aside-dashboard.closed_sidebar .main .perfil-user > p {
+    display: none;
+  }
+  .aside-dashboard.closed_sidebar .submenu-nav .link-submenu > .dropdown-items {
+    padding: 10px 15px !important;
+  }
+  .aside-dashboard.closed_sidebar .link-block .left-link > a > p {
+    display: none;
+  }
+  .aside-dashboard.closed_sidebar .logo > p {
+    display: none;
+  }
+
+  .aside-dashboard.closed_sidebar .link-block > .left-link > a > ion-icon {
+    margin-right: 0px !important;
+  }
+
+  .aside-dashboard.closed_sidebar .submenu-nav {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: max-content;
+    transition: all 0.1s ease-in;
+  }
+  .aside-dashboard.closed_sidebar .links-menu-dashboard:hover .submenu-nav {
+    top: 0;
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+.main {
+  width: 100%;
+  height: calc(100% - 70px);
+  /* background: #222e3c; */
+  background: #11101d;
+}
+.main .perfil-user {
+  width: 100%;
+  padding: 15px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .perfil-user > img {
+  width: 100px;
+  object-fit: cover;
+  object-position: top center;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.main .perfil-user > p {
+  color: #fff;
+  margin-bottom: 0px !important;
+  text-align: center;
+}
+.main .nav-links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.links-menu-dashboard {
+  list-style: none;
+  position: relative;
+}
+.header-aside {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 20px 15px;
+  background: #fff;
+}
+.logo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo > ion-icon {
+  margin-right: 10px;
+  font-size: 40px;
+}
+.logo > p {
+  font-size: 20px;
+  font-weight: 600;
+}
+.toggle-drop {
+  position: relative;
+}
+
+.links-menu-dashboard > a {
+  display: flex;
+  width: 100%;
+  padding: 5px 0px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+}
+.submenu-nav {
+  width: 100%;
+  padding: 15px 50px !important;
+  background: #1d1b31;
+  display: none;
+}
+.submenu-nav.show-menu {
+  display: block;
+}
+.submenu-nav .link-submenu {
+  list-style: none;
+}
+.submenu-nav .link-submenu > .dropdown-items {
+  color: #fff;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 5px 0px;
+  text-decoration: none !important;
+  transition: all 0.5s;
+}
+.dropdown-items > svg {
+  margin-right: 10px;
+}
+
+.link-block {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.link-block .left-link {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.link-block > .left-link > a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 15px 0px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.link-block > .left-link > a:hover {
+  background: #fff;
+  color: #000;
+}
+.link-block > .left-link > a.active-link {
+  background: #fff;
+  color: #000;
+}
+.link-block > .left-link > a > p {
+  margin: 0px !important;
+}
+.link-block > .left-link > a > ion-icon,
+.link-block > .left-link > a > i {
+  text-align: center;
+  min-width: 60px;
+  font-size: 20px;
+}
+.link-block > .right-link > svg {
+  text-align: center;
+  min-width: 78px;
+  cursor: pointer;
+  color: #fff;
+}

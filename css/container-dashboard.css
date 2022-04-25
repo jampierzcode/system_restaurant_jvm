@@ -1,0 +1,64 @@
+.container-dashboard {
+  margin-left: var(--width-sidebar);
+  background: #f5f7fb;
+  padding: 110px 60px 40px 60px;
+  height: 100vh;
+  transition: margin-left 0.5s;
+  position: relative;
+  overflow-x: hidden;
+}
+.route {
+  display: block;
+  text-align: start;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 30px;
+}
+.links-container {
+  width: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.btn-add {
+  border-style: none;
+  background: black;
+  color: #fff;
+  font-size: 14px;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.btn-add.hidden {
+  display: none;
+}
+
+.actions-button {
+  padding-top: 40px;
+  display: flex;
+  gap: 10px;
+}
+.actions-button > button,
+.actions-button > a {
+  padding: 10px 24px;
+  border: 0px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.actions-button > .btn-add-create {
+  background: #372a96;
+  color: #fff;
+}
+.actions-button > .btn-cancel-create {
+  background: #ececec;
+  color: #000;
+}
+@media screen and (max-width: 700px) {
+  .container-dashboard {
+    padding: 110px 20px 40px 20px !important;
+  }
+}

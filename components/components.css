@@ -1,0 +1,82 @@
+.list-categorias {
+  width: 100%;
+  overflow-x: auto;
+  gap: 10px;
+}
+.list-categorias > span.categoria-name {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #fff;
+  border-radius: 15px;
+  border: 1px solid #eee;
+  font-size: 14px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.list-categorias > span.categoria-name:hover {
+  background: rgb(4, 182, 150);
+  color: #fff;
+}
+.list-categorias > span.active-category {
+  background-color: #11101d;
+  color: #fff;
+}
+
+/* componente de busqueda */
+.search-filter {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.search-filter > ion-icon {
+  padding: 0px 10px;
+}
+.search-filter > input {
+  background: transparent;
+}
+/* componente card box */
+
+.card-box {
+  width: 100%;
+  padding: 20px 25px;
+  border: 1px solid #eee;
+  background-color: #fff;
+  gap: 10px;
+}
+.card-box .content-card {
+  width: 100%;
+  gap: 10px;
+}
+.card-box .content-card .name-card {
+  font-size: 16px;
+  font-weight: 500;
+}
+.card-box .content-card .precio-card {
+  font-size: 16px;
+  font-weight: 600;
+  color: #11101d;
+}
+.card-box .content-card .precio-card > span {
+  font-size: 12px;
+}
+.card-box .content-card .category-card {
+  display: inline-block;
+  width: max-content;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: #11101d;
+  color: #fff;
+  font-size: 10px;
+}
+.card-box .image-card {
+  width: 100%;
+  height: 100%;
+}
+.card-box .image-card > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}

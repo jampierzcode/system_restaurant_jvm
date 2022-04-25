@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap");
+@import url("validation.css");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+input,
+button,
+select,
+option {
+  padding: 12px 24px;
+  border: none;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+}
+button {
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+}
+input:focus {
+  outline: none;
+}
+.flex-h {
+  display: flex;
+  align-items: center;
+}
+.d-flex {
+  display: flex;
+}
+.flex-h-jc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-v-jc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.flex-v {
+  display: flex;
+  flex-direction: column;
+}
+/* grid */
+.grid-4c {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid-3c {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-2c {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.table-grid-4c {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.table-grid-4c .tag-header,
+.table-grid-4c .tag-body {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+.table-grid-4c .tag-body > input {
+  background: transparent;
+}
+.table-grid-5c {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+.table-grid-5c .tag-header,
+.table-grid-5c .tag-body {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  overflow: auto;
+}
+.table-grid-5c .tag-body > input {
+  background: transparent;
+}
+.bg-transparent {
+  background-color: transparent;
+}
+
+@media screen and (max-width: 1025px) {
+  .grid-4c {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid-3c {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-2c {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 838px) {
+  .grid-4c {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-3c {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 621px) {
+  .grid-4c {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

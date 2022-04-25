@@ -1,0 +1,12 @@
+:root {
+  --color-red-toast: rgb(214, 46, 88);
+}
+.toast_error {
+  width: 100%;
+  background: rgba(255, 37, 91, 0.347);
+  color: var(--color-red-toast);
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid var(--color-red-toast);
+  font-size: 14px;
+}
