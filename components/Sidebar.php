@@ -27,9 +27,19 @@
             <li class="links-menu-dashboard">
                 <div class="link-block">
                     <div class="left-link">
-                        <a class="toggle-drop" href="dashboard.php">
-                            <ion-icon name="pie"></ion-icon>
-                            <p>Dashboard</p>
+                        <a class="toggle-drop" href="perfil.php">
+                            <ion-icon name="person"></ion-icon>
+                            <p>Perfil</p>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="links-menu-dashboard">
+                <div class="link-block">
+                    <div class="left-link">
+                        <a class="toggle-drop" href="usuarios.php">
+                            <ion-icon name="people"></ion-icon>
+                            <p>Gestion Usuarios</p>
                         </a>
                     </div>
                 </div>

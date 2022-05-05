@@ -17,7 +17,7 @@ if (!isset($_SESSION["id_usuario"])) {
         <link rel="stylesheet" href="../css/navdashboard.css">
         <link rel="stylesheet" href="../components/components.css">
         <link rel="stylesheet" href="../css/productos.css">
-        <title>Dashboard</title>
+        <title>Productos</title>
     </head>
 
     <body>

@@ -12,9 +12,9 @@ if (!empty($usuario->datos)) {
 
     foreach ($usuario->datos as $dato) {
         $_SESSION["id_usuario"] = $dato->id_usuario;
-        $_SESSION["nombres"] = $dato->nombre;
+        $_SESSION["nombres"] = $dato->nombres . " " . $dato->apellidos;
     }
-    header("Location: ../vistas/dashboard.php");
+    header("Location: ../vistas/perfil.php");
 } else {
     $_SESSION["error"] = "EL usuario o contraseña es incorrecto";
     header("Location: ../../systemrestaurant");

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 25-04-2022 a las 16:59:49
+-- Tiempo de generación: 05-05-2022 a las 16:29:22
 -- Versión del servidor: 10.4.14-MariaDB
 -- Versión de PHP: 7.4.9
 
@@ -24,21 +24,31 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `rol`
+-- Estructura de tabla para la tabla `pedido`
 --
 
-CREATE TABLE `rol` (
+CREATE TABLE `pedido` (
+  `id_pedido` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `urol`
+--
+
+CREATE TABLE `urol` (
   `id_rol` int(11) NOT NULL,
-  `nombre` varchar(50) COLLATE utf8_unicode_ci NOT NULL
+  `user_rol` varchar(50) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Volcado de datos para la tabla `rol`
+-- Volcado de datos para la tabla `urol`
 --
 
-INSERT INTO `rol` (`id_rol`, `nombre`) VALUES
-(1, 'Admin'),
-(2, 'Azafato - Azafata');
+INSERT INTO `urol` (`id_rol`, `user_rol`) VALUES
+(1, 'admin'),
+(2, 'cajero');
 
 -- --------------------------------------------------------
 
@@ -48,29 +58,41 @@ INSERT INTO `rol` (`id_rol`, `nombre`) VALUES
 
 CREATE TABLE `usuario` (
   `id_usuario` int(11) NOT NULL,
-  `nombre` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
-  `dni` varchar(11) COLLATE utf8_unicode_ci NOT NULL,
-  `user` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `dni_ruc` varchar(15) COLLATE utf8_unicode_ci NOT NULL,
+  `apellidos` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `nombres` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `celular` varchar(15) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `cell_whatsapp` varchar(15) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `direccion` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `f_nacimiento` date NOT NULL,
+  `email` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+  `username` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   `password` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   `tipo_usuario` int(11) NOT NULL,
-  `estado_usuario` varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL
+  `nulo` smallint(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Volcado de datos para la tabla `usuario`
 --
 
-INSERT INTO `usuario` (`id_usuario`, `nombre`, `dni`, `user`, `password`, `tipo_usuario`, `estado_usuario`) VALUES
-(1, 'Ronald', '12345678', 'admin_ronald', 'ronald20%', 1, 'Activo');
+INSERT INTO `usuario` (`id_usuario`, `dni_ruc`, `apellidos`, `nombres`, `celular`, `cell_whatsapp`, `direccion`, `f_nacimiento`, `email`, `username`, `password`, `tipo_usuario`, `nulo`) VALUES
+(1, '74421968', 'Vasquez Mija', 'Jampier Smith', '915096462', '915096462', 'Av 28 de agosto #525', '2001-06-15', 'jampierv127@gmail.com', 'admin', 'ronaldadmin20%', 1, 0);
 
 --
 -- Índices para tablas volcadas
 --
 
 --
--- Indices de la tabla `rol`
+-- Indices de la tabla `pedido`
 --
-ALTER TABLE `rol`
+ALTER TABLE `pedido`
+  ADD PRIMARY KEY (`id_pedido`);
+
+--
+-- Indices de la tabla `urol`
+--
+ALTER TABLE `urol`
   ADD PRIMARY KEY (`id_rol`);
 
 --
@@ -85,9 +107,15 @@ ALTER TABLE `usuario`
 --
 
 --
--- AUTO_INCREMENT de la tabla `rol`
+-- AUTO_INCREMENT de la tabla `pedido`
 --
-ALTER TABLE `rol`
+ALTER TABLE `pedido`
+  MODIFY `id_pedido` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `urol`
+--
+ALTER TABLE `urol`
   MODIFY `id_rol` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
@@ -95,16 +123,6 @@ ALTER TABLE `rol`
 --
 ALTER TABLE `usuario`
   MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
--- Restricciones para tablas volcadas
---
-
---
--- Filtros para la tabla `usuario`
---
-ALTER TABLE `usuario`
-  ADD CONSTRAINT `usuario_ibfk_1` FOREIGN KEY (`tipo_usuario`) REFERENCES `rol` (`id_rol`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

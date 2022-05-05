@@ -16,7 +16,7 @@ class Usuario
 
     function Loguearse($username, $password)
     {
-        $sql = "SELECT * FROM usuario WHERE user=:username and password=:password";
+        $sql = "SELECT * FROM usuario WHERE username=:username and password=:password";
         $query = $this->conexion->prepare($sql);
         $query->execute(array(':username' => $username, ':password' => $password));
         $this->datos = $query->fetchAll(); // retorna objetos o no
