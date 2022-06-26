@@ -1,0 +1,127 @@
+.section-crud-register {
+  gap: 40px;
+  display: grid;
+  grid-template-areas: "a b b";
+}
+
+.mesas-list {
+  grid-area: a;
+}
+.comanda-list {
+  grid-area: b;
+}
+.box-grid-ventas {
+  width: 100%;
+  height: max-content;
+  background: #fff;
+  padding: 20px;
+  gap: 20px;
+  overflow: hidden;
+}
+.search-filter {
+  border: 1px solid #eee;
+}
+
+.list-productos {
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+}
+.list-productos > .item-product {
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid #eee;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.list-productos > .item-product:hover {
+  background-color: rgb(4, 182, 150);
+  color: #fff;
+  cursor: pointer;
+}
+/* mesas */
+.list-mesas {
+  gap: 10px;
+  overflow-x: auto;
+}
+.list-mesas > .card-box {
+  border-radius: 4px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.list-mesas > .card-box:hover {
+  background: rgb(4, 182, 150);
+  color: #fff;
+  cursor: pointer;
+}
+
+/* productos list */
+.select-product {
+  gap: 20px;
+}
+span.title-box {
+  padding: 10px;
+  background-color: rgb(0 0 0);
+  color: #fff;
+}
+
+/* productos register registradora */
+.content-registradora {
+  gap: 20px;
+}
+
+.header-registradora {
+  border-bottom: 2px solid #eee;
+}
+
+.table-register {
+  width: 100%;
+  gap: 15px;
+}
+.clear-register > button {
+  gap: 10px;
+  font-size: 14px;
+}
+.total-ventas {
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 20px;
+  background: rgb(0, 181, 66);
+  color: #fff;
+}
+.productos-register {
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+}
+.productos-register .product-add-venta:nth-child(2n + 1) {
+  background-color: #eee;
+}
+.product-add-venta .remove-item {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: red;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+}
+@media screen and (max-width: 980px) {
+  .mesas-list {
+    max-height: 250px;
+  }
+  .section-crud-register {
+    grid-template-areas:
+      "a"
+      "b";
+  }
+  /* .section-crud-register .box-grid-ventas {
+    grid-area: a;
+  } */
+}
