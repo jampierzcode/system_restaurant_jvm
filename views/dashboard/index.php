@@ -1,6 +1,6 @@
 <?php
 
-$dataUser = $this->d['dataUser'];
+$dataUser = $this->d['datauser'];
 
 ?>
 <!DOCTYPE html>

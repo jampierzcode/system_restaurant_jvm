@@ -2413,3 +2413,346 @@ Stack trace:
 [27-Jun-2022 07:41:18 UTC]  ============= 
 [27-Jun-2022 07:41:18 UTC] controllers/favicon.ico.php
 [27-Jun-2022 07:41:18 UTC] Render: errors/404
+[27-Jun-2022 08:03:25 UTC]  PHP error log 
+[27-Jun-2022 08:03:25 UTC]  ============= 
+[27-Jun-2022 08:03:26 UTC] controllers/dashboard.php
+[27-Jun-2022 08:03:26 UTC] SessionController::validateSession()
+[27-Jun-2022 08:03:26 UTC] Identificacion del usuario actual -> 9
+[27-Jun-2022 08:03:26 UTC] SessionController::getUserSessionData() is started
+[27-Jun-2022 08:03:26 UTC] SessionController::validateSession() is true user4
+[27-Jun-2022 08:03:26 UTC] SessionController::validateSession() is true admin
+[27-Jun-2022 08:03:26 UTC] sessionController::getCurrentPage(): actualLink => /dashboard, url => dashboard
+[27-Jun-2022 08:03:26 UTC] sessionController::isPublic(): currentURL => dashboard
+[27-Jun-2022 08:03:26 UTC] sessionController::getCurrentPage(): actualLink => /dashboard, url => dashboard
+[27-Jun-2022 08:03:26 UTC] SessionController::validateSession() => autorizado, lo dejamos pasar
+[27-Jun-2022 08:03:26 UTC] SessionController::getUserSessionData() is started
+[27-Jun-2022 08:03:26 UTC] dashboard::render datauser user4
+[27-Jun-2022 08:03:26 UTC] Render: dashboard/index
+[27-Jun-2022 08:03:26 UTC] PHP Warning:  Undefined array key "dataUser" in /var/www/html/views/dashboard/index.php on line 3
+[27-Jun-2022 08:03:26 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getUser() on null in /var/www/html/components/Sidebar.php:8
+Stack trace:
+#0 /var/www/html/views/dashboard/index.php(21): include_once()
+#1 /var/www/html/libs/view.php(19): require('/var/www/html/v...')
+#2 /var/www/html/controllers/dashboard.php(17): View->render('dashboard/index', Array)
+#3 /var/www/html/libs/app.php(45): Dashboard->render()
+#4 /var/www/html/index.php(38): App->__construct()
+#5 {main}
+  thrown in /var/www/html/components/Sidebar.php on line 8
+[27-Jun-2022 08:03:26 UTC]  PHP error log 
+[27-Jun-2022 08:03:26 UTC]  ============= 
+[27-Jun-2022 08:03:26 UTC] controllers/favicon.ico.php
+[27-Jun-2022 08:03:26 UTC] Render: errors/404
+[27-Jun-2022 08:03:31 UTC]  PHP error log 
+[27-Jun-2022 08:03:31 UTC]  ============= 
+[27-Jun-2022 08:03:31 UTC] SessionController::validateSession()
+[27-Jun-2022 08:03:31 UTC] Identificacion del usuario actual -> 9
+[27-Jun-2022 08:03:31 UTC] SessionController::getUserSessionData() is started
+[27-Jun-2022 08:03:31 UTC] SessionController::validateSession() is true user4
+[27-Jun-2022 08:03:31 UTC] SessionController::validateSession() is true admin
+[27-Jun-2022 08:03:31 UTC] sessionController::getCurrentPage(): actualLink => /, url => 
+[27-Jun-2022 08:03:31 UTC] sessionController::isPublic(): currentURL => 
+[27-Jun-2022 08:03:31 UTC] sessionController:validateSession() => sitio publico, redirige al main
+[27-Jun-2022 08:03:31 UTC] Render: login/index
+[27-Jun-2022 08:03:31 UTC]  PHP error log 
+[27-Jun-2022 08:03:31 UTC]  ============= 
+[27-Jun-2022 08:03:32 UTC] controllers/dashboard.php
+[27-Jun-2022 08:03:32 UTC] SessionController::validateSession()
+[27-Jun-2022 08:03:32 UTC] Identificacion del usuario actual -> 9
+[27-Jun-2022 08:03:32 UTC] SessionController::getUserSessionData() is started
+[27-Jun-2022 08:03:32 UTC] SessionController::validateSession() is true user4
+[27-Jun-2022 08:03:32 UTC] SessionController::validateSession() is true admin
+[27-Jun-2022 08:03:32 UTC] sessionController::getCurrentPage(): actualLink => /dashboard, url => dashboard
+[27-Jun-2022 08:03:32 UTC] sessionController::isPublic(): currentURL => dashboard
+[27-Jun-2022 08:03:32 UTC] sessionController::getCurrentPage(): actualLink => /dashboard, url => dashboard
+[27-Jun-2022 08:03:32 UTC] SessionController::validateSession() => autorizado, lo dejamos pasar
+[27-Jun-2022 08:03:32 UTC] SessionController::getUserSessionData() is started
+[27-Jun-2022 08:03:32 UTC] dashboard::render datauser user4
+[27-Jun-2022 08:03:32 UTC] Render: dashboard/index
+[27-Jun-2022 08:03:32 UTC] PHP Warning:  Undefined array key "dataUser" in /var/www/html/views/dashboard/index.php on line 3
+[27-Jun-2022 08:03:32 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getUser() on null in /var/www/html/components/Sidebar.php:8
+Stack trace:
+#0 /var/www/html/views/dashboard/index.php(21): include_once()
+#1 /var/www/html/libs/view.php(19): require('/var/www/html/v...')
+#2 /var/www/html/controllers/dashboard.php(17): View->render('dashboard/index', Array)
+#3 /var/www/html/libs/app.php(45): Dashboard->render()
+#4 /var/www/html/index.php(38): App->__construct()
+#5 {main}
+  thrown in /var/www/html/components/Sidebar.php on line 8
+[27-Jun-2022 08:03:32 UTC]  PHP error log 
+[27-Jun-2022 08:03:32 UTC]  ============= 
+[27-Jun-2022 08:03:32 UTC] controllers/favicon.ico.php
+[27-Jun-2022 08:03:32 UTC] Render: errors/404
+[27-Jun-2022 08:03:44 UTC]  PHP error log 
+[27-Jun-2022 08:03:44 UTC]  ============= 
+[27-Jun-2022 08:03:44 UTC] controllers/usuarios.php
+[27-Jun-2022 08:03:44 UTC] SessionController::validateSession()
+[27-Jun-2022 08:03:44 UTC] Identificacion del usuario actual -> 9
+[27-Jun-2022 08:03:44 UTC] SessionController::getUserSessionData() is started
+[27-Jun-2022 08:03:44 UTC] SessionController::validateSession() is true user4
+[27-Jun-2022 08:03:44 UTC] SessionController::validateSession() is true admin
+[27-Jun-2022 08:03:44 UTC] sessionController::getCurrentPage(): actualLink => /usuarios, url => usuarios
+[27-Jun-2022 08:03:44 UTC] sessionController::isPublic(): currentURL => usuarios
+[27-Jun-2022 08:03:44 UTC] sessionController::getCurrentPage(): actualLink => /usuarios, url => usuarios
+[27-Jun-2022 08:03:44 UTC] SessionController::validateSession() => autorizado, lo dejamos pasar
+[27-Jun-2022 08:03:44 UTC] SessionController::getUserSessionData() is started
+[27-Jun-2022 08:03:44 UTC] USUARIOS::RENDER dataUser user4
+[27-Jun-2022 08:03:44 UTC] Render: usuarios/index
+[27-Jun-2022 08:03:44 UTC]  PHP error log 
+[27-Jun-2022 08:03:44 UTC]  ============= 
+[27-Jun-2022 08:03:44 UTC] controllers/favicon.ico.php
+[27-Jun-2022 08:03:44 UTC] Render: errors/404
+[27-Jun-2022 08:03:54 UTC]  PHP error log 
+[27-Jun-2022 08:03:54 UTC]  ============= 
+[27-Jun-2022 08:03:54 UTC] controllers/logout.php
+[27-Jun-2022 08:03:54 UTC] SessionController::validateSession()
+[27-Jun-2022 08:03:54 UTC] Identificacion del usuario actual -> 9
+[27-Jun-2022 08:03:54 UTC] SessionController::getUserSessionData() is started
+[27-Jun-2022 08:03:54 UTC] SessionController::validateSession() is true user4
+[27-Jun-2022 08:03:54 UTC] SessionController::validateSession() is true admin
+[27-Jun-2022 08:03:54 UTC] sessionController::getCurrentPage(): actualLink => /logout, url => logout
+[27-Jun-2022 08:03:54 UTC] sessionController::isPublic(): currentURL => logout
+[27-Jun-2022 08:03:54 UTC] sessionController::getCurrentPage(): actualLink => /logout, url => logout
+[27-Jun-2022 08:03:54 UTC] SessionController::validateSession() => no autorizado, redirige al main
+[27-Jun-2022 08:03:54 UTC] controller::redirect passed
+[27-Jun-2022 08:03:54 UTC]  PHP error log 
+[27-Jun-2022 08:03:54 UTC]  ============= 
+[27-Jun-2022 08:03:54 UTC] SessionController::validateSession()
+[27-Jun-2022 08:03:54 UTC] sessionController::getCurrentPage(): actualLink => /, url => 
+[27-Jun-2022 08:03:54 UTC] sessionController::isPublic(): currentURL => 
+[27-Jun-2022 08:03:54 UTC] SessionCOntrollerÑÑvalidateSession() public page
+[27-Jun-2022 08:03:54 UTC] Render: login/index
+[27-Jun-2022 08:03:54 UTC]  PHP error log 
+[27-Jun-2022 08:03:54 UTC]  ============= 
+[27-Jun-2022 08:03:54 UTC] controllers/favicon.ico.php
+[27-Jun-2022 08:03:54 UTC] Render: errors/404
+[27-Jun-2022 08:04:00 UTC]  PHP error log 
+[27-Jun-2022 08:04:00 UTC]  ============= 
+[27-Jun-2022 08:04:00 UTC] controllers/login.php
+[27-Jun-2022 08:04:00 UTC] SessionController::validateSession()
+[27-Jun-2022 08:04:00 UTC] sessionController::getCurrentPage(): actualLink => /login/authenticate, url => login
+[27-Jun-2022 08:04:00 UTC] sessionController::isPublic(): currentURL => login
+[27-Jun-2022 08:04:00 UTC] SessionCOntrollerÑÑvalidateSession() public page
+[27-Jun-2022 08:04:00 UTC] ExistPost: Todos los parametros existen
+[27-Jun-2022 08:04:00 UTC] USERMODE::EXISTS false
+[27-Jun-2022 08:04:00 UTC] LOGINMODEL::LOGIN no existe el usuario
+[27-Jun-2022 08:04:00 UTC] Login::authenticate() username and/or password wrong
+[27-Jun-2022 08:04:00 UTC] controller::redirect passed
+[27-Jun-2022 08:04:00 UTC]  PHP error log 
+[27-Jun-2022 08:04:00 UTC]  ============= 
+[27-Jun-2022 08:04:00 UTC] SessionController::validateSession()
+[27-Jun-2022 08:04:00 UTC] sessionController::getCurrentPage(): actualLink => /?error=bcbe63ed8464684af6945ad8a89f76f8, url => ?error=bcbe63ed8464684af6945ad8a89f76f8
+[27-Jun-2022 08:04:00 UTC] sessionController::isPublic(): currentURL => ?error=bcbe63ed8464684af6945ad8a89f76f8
+[27-Jun-2022 08:04:00 UTC] SessionCOntrollerÑÑvalidateSession() public page
+[27-Jun-2022 08:04:00 UTC] Error: Nombre de usuario y/o password incorrectos
+[27-Jun-2022 08:04:00 UTC] Render: login/index
+[27-Jun-2022 08:04:00 UTC]  PHP error log 
+[27-Jun-2022 08:04:00 UTC]  ============= 
+[27-Jun-2022 08:04:00 UTC] controllers/favicon.ico.php
+[27-Jun-2022 08:04:00 UTC] Render: errors/404
+[27-Jun-2022 08:04:04 UTC]  PHP error log 
+[27-Jun-2022 08:04:04 UTC]  ============= 
+[27-Jun-2022 08:04:05 UTC] controllers/login.php
+[27-Jun-2022 08:04:05 UTC] SessionController::validateSession()
+[27-Jun-2022 08:04:05 UTC] sessionController::getCurrentPage(): actualLink => /login/authenticate, url => login
+[27-Jun-2022 08:04:05 UTC] sessionController::isPublic(): currentURL => login
+[27-Jun-2022 08:04:05 UTC] SessionCOntrollerÑÑvalidateSession() public page
+[27-Jun-2022 08:04:05 UTC] ExistPost: Todos los parametros existen
+[27-Jun-2022 08:04:05 UTC] LOGINMODE::LOGIN user id9
+[27-Jun-2022 08:04:05 UTC] Password Actual -> password , Password Descriptada -> password
+[27-Jun-2022 08:04:05 UTC] LOGINMODEL::login() verify password fail
+[27-Jun-2022 08:04:05 UTC] Login::authenticate() passed
+[27-Jun-2022 08:04:05 UTC] sessionController::initialize(): user: user4
+[27-Jun-2022 08:04:05 UTC] sessionController::authorizeAccess(): role: admin
+[27-Jun-2022 08:04:05 UTC] controller::redirect passed
+[27-Jun-2022 08:04:05 UTC]  PHP error log 
+[27-Jun-2022 08:04:05 UTC]  ============= 
+[27-Jun-2022 08:04:05 UTC] controllers/usuarios.php
+[27-Jun-2022 08:04:05 UTC] SessionController::validateSession()
+[27-Jun-2022 08:04:05 UTC] Identificacion del usuario actual -> 9
+[27-Jun-2022 08:04:05 UTC] SessionController::getUserSessionData() is started
+[27-Jun-2022 08:04:05 UTC] SessionController::validateSession() is true user4
+[27-Jun-2022 08:04:05 UTC] SessionController::validateSession() is true admin
+[27-Jun-2022 08:04:05 UTC] sessionController::getCurrentPage(): actualLink => /usuarios, url => usuarios
+[27-Jun-2022 08:04:05 UTC] sessionController::isPublic(): currentURL => usuarios
+[27-Jun-2022 08:04:05 UTC] sessionController::getCurrentPage(): actualLink => /usuarios, url => usuarios
+[27-Jun-2022 08:04:05 UTC] SessionController::validateSession() => autorizado, lo dejamos pasar
+[27-Jun-2022 08:04:05 UTC] SessionController::getUserSessionData() is started
+[27-Jun-2022 08:04:05 UTC] USUARIOS::RENDER dataUser user4
+[27-Jun-2022 08:04:05 UTC] Render: usuarios/index
+[27-Jun-2022 08:04:05 UTC]  PHP error log 
+[27-Jun-2022 08:04:05 UTC]  ============= 
+[27-Jun-2022 08:04:05 UTC] controllers/favicon.ico.php
+[27-Jun-2022 08:04:05 UTC] Render: errors/404
+[27-Jun-2022 08:05:08 UTC]  PHP error log 
+[27-Jun-2022 08:05:08 UTC]  ============= 
+[27-Jun-2022 08:05:08 UTC] controllers/dashboard.php
+[27-Jun-2022 08:05:08 UTC] SessionController::validateSession()
+[27-Jun-2022 08:05:08 UTC] Identificacion del usuario actual -> 9
+[27-Jun-2022 08:05:08 UTC] SessionController::getUserSessionData() is started
+[27-Jun-2022 08:05:08 UTC] SessionController::validateSession() is true user4
+[27-Jun-2022 08:05:08 UTC] SessionController::validateSession() is true admin
+[27-Jun-2022 08:05:08 UTC] sessionController::getCurrentPage(): actualLink => /dashboard, url => dashboard
+[27-Jun-2022 08:05:08 UTC] sessionController::isPublic(): currentURL => dashboard
+[27-Jun-2022 08:05:08 UTC] sessionController::getCurrentPage(): actualLink => /dashboard, url => dashboard
+[27-Jun-2022 08:05:08 UTC] SessionController::validateSession() => autorizado, lo dejamos pasar
+[27-Jun-2022 08:05:08 UTC] SessionController::getUserSessionData() is started
+[27-Jun-2022 08:05:08 UTC] dashboard::render datauser user4
+[27-Jun-2022 08:05:08 UTC] Render: dashboard/index
+[27-Jun-2022 08:05:08 UTC] PHP Warning:  Undefined array key "dataUser" in /var/www/html/views/dashboard/index.php on line 3
+[27-Jun-2022 08:05:08 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getUser() on null in /var/www/html/components/Sidebar.php:8
+Stack trace:
+#0 /var/www/html/views/dashboard/index.php(21): include_once()
+#1 /var/www/html/libs/view.php(19): require('/var/www/html/v...')
+#2 /var/www/html/controllers/dashboard.php(17): View->render('dashboard/index', Array)
+#3 /var/www/html/libs/app.php(45): Dashboard->render()
+#4 /var/www/html/index.php(38): App->__construct()
+#5 {main}
+  thrown in /var/www/html/components/Sidebar.php on line 8
+[27-Jun-2022 08:05:08 UTC]  PHP error log 
+[27-Jun-2022 08:05:08 UTC]  ============= 
+[27-Jun-2022 08:05:08 UTC] controllers/dashboard.php
+[27-Jun-2022 08:05:08 UTC] SessionController::validateSession()
+[27-Jun-2022 08:05:08 UTC] Identificacion del usuario actual -> 9
+[27-Jun-2022 08:05:08 UTC] SessionController::getUserSessionData() is started
+[27-Jun-2022 08:05:08 UTC] SessionController::validateSession() is true user4
+[27-Jun-2022 08:05:08 UTC] SessionController::validateSession() is true admin
+[27-Jun-2022 08:05:08 UTC] sessionController::getCurrentPage(): actualLink => /dashboard, url => dashboard
+[27-Jun-2022 08:05:08 UTC] sessionController::isPublic(): currentURL => dashboard
+[27-Jun-2022 08:05:08 UTC] sessionController::getCurrentPage(): actualLink => /dashboard, url => dashboard
+[27-Jun-2022 08:05:08 UTC] SessionController::validateSession() => autorizado, lo dejamos pasar
+[27-Jun-2022 08:05:08 UTC] SessionController::getUserSessionData() is started
+[27-Jun-2022 08:05:08 UTC] dashboard::render datauser user4
+[27-Jun-2022 08:05:09 UTC] Render: dashboard/index
+[27-Jun-2022 08:05:09 UTC] PHP Warning:  Undefined array key "dataUser" in /var/www/html/views/dashboard/index.php on line 3
+[27-Jun-2022 08:05:09 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getUser() on null in /var/www/html/components/Sidebar.php:8
+Stack trace:
+#0 /var/www/html/views/dashboard/index.php(21): include_once()
+#1 /var/www/html/libs/view.php(19): require('/var/www/html/v...')
+#2 /var/www/html/controllers/dashboard.php(17): View->render('dashboard/index', Array)
+#3 /var/www/html/libs/app.php(45): Dashboard->render()
+#4 /var/www/html/index.php(38): App->__construct()
+#5 {main}
+  thrown in /var/www/html/components/Sidebar.php on line 8
+[27-Jun-2022 08:05:09 UTC]  PHP error log 
+[27-Jun-2022 08:05:09 UTC]  ============= 
+[27-Jun-2022 08:05:09 UTC] controllers/favicon.ico.php
+[27-Jun-2022 08:05:09 UTC] Render: errors/404
+[27-Jun-2022 08:05:29 UTC]  PHP error log 
+[27-Jun-2022 08:05:29 UTC]  ============= 
+[27-Jun-2022 08:05:29 UTC] controllers/dashboard.php
+[27-Jun-2022 08:05:29 UTC] SessionController::validateSession()
+[27-Jun-2022 08:05:29 UTC] Identificacion del usuario actual -> 9
+[27-Jun-2022 08:05:29 UTC] SessionController::getUserSessionData() is started
+[27-Jun-2022 08:05:29 UTC] SessionController::validateSession() is true user4
+[27-Jun-2022 08:05:29 UTC] SessionController::validateSession() is true admin
+[27-Jun-2022 08:05:29 UTC] sessionController::getCurrentPage(): actualLink => /dashboard, url => dashboard
+[27-Jun-2022 08:05:29 UTC] sessionController::isPublic(): currentURL => dashboard
+[27-Jun-2022 08:05:29 UTC] sessionController::getCurrentPage(): actualLink => /dashboard, url => dashboard
+[27-Jun-2022 08:05:29 UTC] SessionController::validateSession() => autorizado, lo dejamos pasar
+[27-Jun-2022 08:05:29 UTC] SessionController::getUserSessionData() is started
+[27-Jun-2022 08:05:29 UTC] dashboard::render datauser user4
+[27-Jun-2022 08:05:29 UTC] Render: dashboard/index
+[27-Jun-2022 08:05:29 UTC]  PHP error log 
+[27-Jun-2022 08:05:29 UTC]  ============= 
+[27-Jun-2022 08:05:29 UTC] controllers/favicon.ico.php
+[27-Jun-2022 08:05:29 UTC] Render: errors/404
+[27-Jun-2022 08:05:32 UTC]  PHP error log 
+[27-Jun-2022 08:05:32 UTC]  ============= 
+[27-Jun-2022 08:05:32 UTC] controllers/perfil.php
+[27-Jun-2022 08:05:33 UTC] SessionController::validateSession()
+[27-Jun-2022 08:05:33 UTC] Identificacion del usuario actual -> 9
+[27-Jun-2022 08:05:33 UTC] SessionController::getUserSessionData() is started
+[27-Jun-2022 08:05:33 UTC] SessionController::validateSession() is true user4
+[27-Jun-2022 08:05:33 UTC] SessionController::validateSession() is true admin
+[27-Jun-2022 08:05:33 UTC] sessionController::getCurrentPage(): actualLink => /perfil, url => perfil
+[27-Jun-2022 08:05:33 UTC] sessionController::isPublic(): currentURL => perfil
+[27-Jun-2022 08:05:33 UTC] sessionController::getCurrentPage(): actualLink => /perfil, url => perfil
+[27-Jun-2022 08:05:33 UTC] SessionController::validateSession() => autorizado, lo dejamos pasar
+[27-Jun-2022 08:05:33 UTC] SessionController::getUserSessionData() is started
+[27-Jun-2022 08:05:33 UTC] PERFIL::render datauser user4
+[27-Jun-2022 08:05:33 UTC] Render: perfil/index
+[27-Jun-2022 08:05:33 UTC]  PHP error log 
+[27-Jun-2022 08:05:33 UTC]  ============= 
+[27-Jun-2022 08:05:33 UTC] controllers/favicon.ico.php
+[27-Jun-2022 08:05:33 UTC] Render: errors/404
+[27-Jun-2022 08:05:34 UTC]  PHP error log 
+[27-Jun-2022 08:05:34 UTC]  ============= 
+[27-Jun-2022 08:05:34 UTC] controllers/usuarios.php
+[27-Jun-2022 08:05:34 UTC] SessionController::validateSession()
+[27-Jun-2022 08:05:34 UTC] Identificacion del usuario actual -> 9
+[27-Jun-2022 08:05:34 UTC] SessionController::getUserSessionData() is started
+[27-Jun-2022 08:05:34 UTC] SessionController::validateSession() is true user4
+[27-Jun-2022 08:05:34 UTC] SessionController::validateSession() is true admin
+[27-Jun-2022 08:05:34 UTC] sessionController::getCurrentPage(): actualLink => /usuarios, url => usuarios
+[27-Jun-2022 08:05:34 UTC] sessionController::isPublic(): currentURL => usuarios
+[27-Jun-2022 08:05:34 UTC] sessionController::getCurrentPage(): actualLink => /usuarios, url => usuarios
+[27-Jun-2022 08:05:34 UTC] SessionController::validateSession() => autorizado, lo dejamos pasar
+[27-Jun-2022 08:05:34 UTC] SessionController::getUserSessionData() is started
+[27-Jun-2022 08:05:34 UTC] USUARIOS::RENDER dataUser user4
+[27-Jun-2022 08:05:34 UTC] Render: usuarios/index
+[27-Jun-2022 08:05:34 UTC]  PHP error log 
+[27-Jun-2022 08:05:34 UTC]  ============= 
+[27-Jun-2022 08:05:34 UTC] controllers/favicon.ico.php
+[27-Jun-2022 08:05:34 UTC] Render: errors/404
+[27-Jun-2022 08:05:35 UTC]  PHP error log 
+[27-Jun-2022 08:05:35 UTC]  ============= 
+[27-Jun-2022 08:05:35 UTC] controllers/productos.php
+[27-Jun-2022 08:05:35 UTC] SessionController::validateSession()
+[27-Jun-2022 08:05:35 UTC] Identificacion del usuario actual -> 9
+[27-Jun-2022 08:05:35 UTC] SessionController::getUserSessionData() is started
+[27-Jun-2022 08:05:35 UTC] SessionController::validateSession() is true user4
+[27-Jun-2022 08:05:35 UTC] SessionController::validateSession() is true admin
+[27-Jun-2022 08:05:35 UTC] sessionController::getCurrentPage(): actualLink => /productos, url => productos
+[27-Jun-2022 08:05:35 UTC] sessionController::isPublic(): currentURL => productos
+[27-Jun-2022 08:05:35 UTC] sessionController::getCurrentPage(): actualLink => /productos, url => productos
+[27-Jun-2022 08:05:35 UTC] SessionController::validateSession() => autorizado, lo dejamos pasar
+[27-Jun-2022 08:05:35 UTC] SessionController::getUserSessionData() is started
+[27-Jun-2022 08:05:35 UTC] PRODUCTOS::RENDER dataUser user4
+[27-Jun-2022 08:05:35 UTC] Render: productos/index
+[27-Jun-2022 08:05:35 UTC]  PHP error log 
+[27-Jun-2022 08:05:35 UTC]  ============= 
+[27-Jun-2022 08:05:35 UTC] controllers/favicon.ico.php
+[27-Jun-2022 08:05:35 UTC] Render: errors/404
+[27-Jun-2022 08:05:36 UTC]  PHP error log 
+[27-Jun-2022 08:05:36 UTC]  ============= 
+[27-Jun-2022 08:05:36 UTC] controllers/vender.php
+[27-Jun-2022 08:05:36 UTC] SessionController::validateSession()
+[27-Jun-2022 08:05:36 UTC] Identificacion del usuario actual -> 9
+[27-Jun-2022 08:05:36 UTC] SessionController::getUserSessionData() is started
+[27-Jun-2022 08:05:36 UTC] SessionController::validateSession() is true user4
+[27-Jun-2022 08:05:36 UTC] SessionController::validateSession() is true admin
+[27-Jun-2022 08:05:36 UTC] sessionController::getCurrentPage(): actualLink => /vender, url => vender
+[27-Jun-2022 08:05:36 UTC] sessionController::isPublic(): currentURL => vender
+[27-Jun-2022 08:05:36 UTC] sessionController::getCurrentPage(): actualLink => /vender, url => vender
+[27-Jun-2022 08:05:36 UTC] SessionController::validateSession() => autorizado, lo dejamos pasar
+[27-Jun-2022 08:05:36 UTC] SessionController::getUserSessionData() is started
+[27-Jun-2022 08:05:36 UTC] VENDER::RENDER dataUser user4
+[27-Jun-2022 08:05:36 UTC] Render: vender/index
+[27-Jun-2022 08:05:36 UTC]  PHP error log 
+[27-Jun-2022 08:05:36 UTC]  ============= 
+[27-Jun-2022 08:05:36 UTC] controllers/favicon.ico.php
+[27-Jun-2022 08:05:36 UTC] Render: errors/404
+[27-Jun-2022 08:05:37 UTC]  PHP error log 
+[27-Jun-2022 08:05:37 UTC]  ============= 
+[27-Jun-2022 08:05:37 UTC] controllers/logout.php
+[27-Jun-2022 08:05:37 UTC] SessionController::validateSession()
+[27-Jun-2022 08:05:37 UTC] Identificacion del usuario actual -> 9
+[27-Jun-2022 08:05:37 UTC] SessionController::getUserSessionData() is started
+[27-Jun-2022 08:05:37 UTC] SessionController::validateSession() is true user4
+[27-Jun-2022 08:05:37 UTC] SessionController::validateSession() is true admin
+[27-Jun-2022 08:05:37 UTC] sessionController::getCurrentPage(): actualLink => /logout, url => logout
+[27-Jun-2022 08:05:37 UTC] sessionController::isPublic(): currentURL => logout
+[27-Jun-2022 08:05:37 UTC] sessionController::getCurrentPage(): actualLink => /logout, url => logout
+[27-Jun-2022 08:05:37 UTC] SessionController::validateSession() => no autorizado, redirige al main
+[27-Jun-2022 08:05:37 UTC] controller::redirect passed
+[27-Jun-2022 08:05:37 UTC]  PHP error log 
+[27-Jun-2022 08:05:37 UTC]  ============= 
+[27-Jun-2022 08:05:37 UTC] SessionController::validateSession()
+[27-Jun-2022 08:05:37 UTC] sessionController::getCurrentPage(): actualLink => /, url => 
+[27-Jun-2022 08:05:37 UTC] sessionController::isPublic(): currentURL => 
+[27-Jun-2022 08:05:37 UTC] SessionCOntrollerÑÑvalidateSession() public page
+[27-Jun-2022 08:05:37 UTC] Render: login/index
+[27-Jun-2022 08:05:37 UTC]  PHP error log 
+[27-Jun-2022 08:05:37 UTC]  ============= 
+[27-Jun-2022 08:05:37 UTC] controllers/favicon.ico.php
+[27-Jun-2022 08:05:37 UTC] Render: errors/404

@@ -4,8 +4,12 @@ require_once 'controllers/errores.php';
 class App
 {
 
+  private $contador;
+
   function __construct()
   {
+
+    $this->contador = constant('contador');
 
     $url = isset($_GET['url']) ? $_GET['url'] : '';
 
@@ -13,7 +17,7 @@ class App
 
     $url = explode('/', $url);
 
-    if (empty($url[0])) {    // Por defecto se llama al controlador General
+    if (empty($url[$this->contador])) {    // Por defecto se llama al controlador General
 
       require_once 'controllers/login.php';
 
@@ -26,7 +30,7 @@ class App
       return false;
     }
 
-    $archivoController = 'controllers/' . $url[0] . '.php';
+    $archivoController = 'controllers/' . $url[$this->contador] . '.php';
 
     error_log($archivoController);
 
@@ -34,15 +38,15 @@ class App
 
     require_once $archivoController; // Lo requiere
 
-    $controller = new $url[0]();  // Instancia el controlador
+    $controller = new $url[$this->contador]();  // Instancia el controlador
 
-    $controller->loadModel($url[0]); // Carga el modelo asociado al controlador
+    $controller->loadModel($url[$this->contador]); // Carga el modelo asociado al controlador
 
-    if (!(isset($url[1]) && !empty($url[1]))) return $controller->render(); // Verifica que existe un metodo y que no este vacio 
+    if (!(isset($url[$this->contador + 1]) && !empty($url[$this->contador + 1]))) return $controller->render(); // Verifica que existe un metodo y que no este vacio 
 
-    if (!(method_exists($controller, $url[1]))) return new Errores(); // Verifica que existe el metodo en la clase 
+    if (!(method_exists($controller, $url[$this->contador + 1]))) return new Errores(); // Verifica que existe el metodo en la clase 
 
-    if (!(isset($url[2]))) return $controller->{$url[1]}(); // Verifica si hay algun parametro para el metodo del controlador
+    if (!(isset($url[$this->contador + 2]))) return $controller->{$url[$this->contador + 1]}(); // Verifica si hay algun parametro para el metodo del controlador
 
     $nparam = sizeof($url) - 2; // Se extraer el numero de parametro para el metodo 
 

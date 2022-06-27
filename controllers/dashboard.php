@@ -10,10 +10,10 @@ class Dashboard extends SessionController
 
   public function render()
   {
-    $dataUser = $this->getUserSessionData();
+    $datauser = $this->getusersessiondata();
 
-    error_log("DASHBOARD::RENDER dataUser " . $dataUser->getUser());
+    error_log("dashboard::render datauser " . $datauser->getuser());
 
-    $this->view->render('dashboard/index', ['dataUser' => $dataUser]);
+    $this->view->render('dashboard/index', ['datauser' => $datauser]);
   }
 }

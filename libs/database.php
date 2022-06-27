@@ -8,7 +8,6 @@ class Database
   private $user;
   private $password;
   private $charset;
-  private $port;
 
   public function __construct()
   {
@@ -17,14 +16,13 @@ class Database
     $this->user = constant('USER');
     $this->password = constant('PASSWORD');
     $this->charset = constant('CHARSET');
-    $this->port = constant('PORT_DB');
   }
 
   public function connect()
   {
     try {
       // XAMPP
-      // $connection = "mysql:host=" . $this->host . ";port=" . $this->port . ";dbname=" . $this->db . ";charset=" . $this->charset;
+      // $connection = "mysql:host=" . $this->host  . ";dbname=" . $this->db . ";charset=" . $this->charset;
 
       // Docker
       $connection = "mysql:host=db" . ";dbname=" . $this->db . ";charset=" . $this->charset;

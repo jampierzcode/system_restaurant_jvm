@@ -26,24 +26,16 @@ docker-compose up -d
 
 ### 2. Utilizando xampp
 
-If you're not using Composer, you can also clone `omise/omise-php` repository into the directory of sample code that you just installed this repository:
-
-```
-git clone https://github.com/omise/omise-php
-```
-
-However, using Composer is recommended as you can easily keep the library up-to-date. After cloning the repository, you need to replace line 3 in `config.php` from
-```php
-3: require_once 'vendor/autoload.php';
-```
-
-to
+Una vez instalado en la carpeta se tendra que revisar el archivo `config/config.php`, es este fichero se encuentra las configuraciones del servidor 
 
 ```php
-3: require_once 'omise-php/lib/Omise.php';
+6:  define('URL', 'http://localhost:90/'); //  cambiar si utilizas xampp
+7:  define('URLCORS', 'http://localhost:90/'); //cambiar por el dominio
+8:  define('HOST', 'localhost');
+9:  define('DB', 'restaurant_burguer');
+10: define('USER', 'root');
+11: define('PASSWORD', 'test');
 ```
-
-Please see configuration section below for configuring your Omise Keys.
 
 ## Configuration
 After you installed `omise-php` library already. Next, you need to **configure** your Omise Keys.  
