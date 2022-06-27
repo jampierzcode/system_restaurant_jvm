@@ -21,25 +21,35 @@
       "role": "admin"
     },
     {
-      "site": "user",
-      "access": "private",
-      "role": "user"
-    },
-    {
-      "site": "admin",
+      "site": "usuarios",
       "access": "private",
       "role": "admin"
     },
     {
-      "site": "api",
+      "site": "perfil",
       "access": "private",
       "role": "admin"
+    },
+    {
+      "site": "productos",
+      "access": "private",
+      "role": "admin"
+    },
+    {
+      "site": "vender",
+      "access": "private",
+      "role": "admin"
+    },
+    {
+      "site": "vender",
+      "access": "private",
+      "role": "mozo"
     }
   ],
   "default-sites": {
     "user": "dashboard",
-    "admin": "admin",
-    "mozo": "mesas",
+    "admin": "usuarios",
+    "mozo": "vender",
     "caja": "caja",
     "concinero": "cocina"
   }

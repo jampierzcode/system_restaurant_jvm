@@ -84,6 +84,27 @@ class Controller
     return null;
   }
 
+  // Funciones para las Api's 
+  public function initialJson()
+  {
+
+    header("Content-Type: application/json");
+    header('Access-Control-Allow-Origin: ' . constant('URLCORS')); //Cambiar por el dominio 
+    header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method");
+    header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
+    header("Allow: GET, POST, OPTIONS, PUT, DELETE");
+
+    $this->inputJson = json_decode(file_get_contents('php://input'), true);
+  }
+
+  //Salida de Json, parse del json 
+
+  public function createJson()
+  {
+    http_response_code($this->codeJson);
+    echo json_encode($this->outputJson);
+  }
+
   public function existJson($params)
   {
     foreach ($params as $param) {
@@ -100,27 +121,6 @@ class Controller
   {
     return $this->inputJson[$name];
   }
-
-  function initialJson()
-  {
-
-    header("Content-Type: application/json");
-    header('Access-Control-Allow-Origin: ' . constant('URLCORS')); //Cambiar por el dominio 
-    header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method");
-    header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
-    header("Allow: GET, POST, OPTIONS, PUT, DELETE");
-
-    $this->inputJson = json_decode(file_get_contents('php://input'), true);
-  }
-
-  //Salida de Json, parse del json 
-
-  function createJson()
-  {
-    http_response_code($this->codeJson);
-    echo json_encode($this->outputJson);
-  }
-
   //Set valores json 
 
   function setCodeJson($code)

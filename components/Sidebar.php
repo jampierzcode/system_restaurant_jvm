@@ -27,7 +27,7 @@
       <li class="links-menu-dashboard">
         <div class="link-block">
           <div class="left-link">
-            <a class="toggle-drop" href="perfil.php">
+            <a class="toggle-drop" href="perfil">
               <ion-icon name="person"></ion-icon>
               <p>Perfil</p>
             </a>
@@ -37,7 +37,7 @@
       <li class="links-menu-dashboard">
         <div class="link-block">
           <div class="left-link">
-            <a class="toggle-drop" href="usuarios.php">
+            <a class="toggle-drop" href="usuarios">
               <ion-icon name="people"></ion-icon>
               <p>Gestion Usuarios</p>
             </a>
@@ -48,7 +48,7 @@
       <li class="links-menu-dashboard">
         <div class="link-block">
           <div class="left-link">
-            <a class="toggle-drop" href="productos.php">
+            <a class="toggle-drop" href="productos">
               <ion-icon name="cart"></ion-icon>
               <p>Productos</p>
             </a>
@@ -58,7 +58,7 @@
       <li class="links-menu-dashboard">
         <div class="link-block">
           <div class="left-link">
-            <a class="toggle-drop" href="vender.php">
+            <a class="toggle-drop" href="vender">
               <ion-icon name="logo-usd"></ion-icon>
               <p>Vender</p>
             </a>

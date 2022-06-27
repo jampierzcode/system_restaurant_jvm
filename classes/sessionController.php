@@ -86,7 +86,7 @@ class SessionController extends Controller
         error_log("SessionCOntrollerÑÑvalidateSession() public page");
       } else {
         error_log("SessionControler::validateSession() redirect al login");
-        header('location: ' . constant('URL') . 'errores');
+        header('location: ' . constant('URL') . '');
         // return new Errores();
       }
     }

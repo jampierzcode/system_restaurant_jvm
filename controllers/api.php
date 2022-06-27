@@ -6,6 +6,7 @@ class Api extends SessionController
   public function __construct()
   {
     parent::__construct();
+    $this->initialJson();
   }
 
   public function render()
