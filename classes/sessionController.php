@@ -141,10 +141,11 @@ class SessionController extends Controller
   private function isPublic()
   {
     $currentURL = $this->getCurrentPage();
-    error_log("sessionController::isPublic(): currentURL => " . $currentURL);
     $currentURL = preg_replace("/\?.*/", "", $currentURL); // omite el get
+    error_log("SESSIONCONTROLLER::isPublic currentURL => $currentURL");
     for ($i = 0; $i < sizeof($this->sites); $i++) {
       if ($currentURL === $this->sites[$i]['site'] && $this->sites[$i]['access'] === 'public') {
+        error_log("sessionController::isPublic(): currentURL => " . $currentURL);
         return true;
       }
     }
@@ -194,6 +195,9 @@ class SessionController extends Controller
         break;
       case 'admin':
         $this->redirect($this->defaultSites['admin']);
+        break;
+      case 'mozo':
+        $this->redirect($this->defaultSites['mozo']);
         break;
       default;
     }

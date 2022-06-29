@@ -44,6 +44,11 @@
       "site": "vender",
       "access": "private",
       "role": "mozo"
+    },
+    {
+      "site": "productos",
+      "access": "private",
+      "role": "mozo"
     }
   ],
   "default-sites": {

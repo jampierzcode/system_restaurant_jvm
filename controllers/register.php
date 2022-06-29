@@ -29,7 +29,7 @@ class Register extends SessionController
 
       $this->model->setIdDni(71238977);
       $this->model->setUser($username);
-      $this->model->setRol(1);
+      $this->model->setRol(3);
       $this->model->setNulo(1);
       $this->model->setPassword($password);
 

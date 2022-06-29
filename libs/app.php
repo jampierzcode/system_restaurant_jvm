@@ -32,7 +32,7 @@ class App
 
     $archivoController = 'controllers/' . $url[$this->contador] . '.php';
 
-    error_log($archivoController);
+    error_log("APP::__CONSTRUCT() Archivo del controlador actual -> $archivoController");
 
     if (!file_exists($archivoController)) return new Errores(); //Verifica que el archivo exista
 
@@ -50,13 +50,16 @@ class App
 
     $nparam = sizeof($url) - 2; // Se extraer el numero de parametro para el metodo 
 
+    error_log("APP::__CONSTRUCT numero de params => $nparam");
+
     $params = []; // Arreglo de parametros
 
     for ($i = 0; $i < $nparam; $i++) {              // Itera el array 
       array_push($params, $url[$i + 2]);        // anterior los 
+      // error_log("APP::__CONSTRUCT() parametro pasado => ", $params[$i]);
     }                                             // parametros 
 
-    $controller->{$url[1]}($params);              // Por ultimo, pasa como un array al metodo correspondiente
+    $controller->{$url[$this->contador + 1]}($params);              // Por ultimo, pasa como un array al metodo correspondiente
 
   }
 }

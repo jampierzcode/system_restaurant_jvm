@@ -14,10 +14,10 @@ class LoginModel extends UserModel
       error_log("LOGINMODE::LOGIN user id" . $this->getIdUser());
 
       if ($this->verifyPassword($password, $this->getPassword())) {
-        error_log('LOGINMODEL::login() verify password fail');
+        error_log('LOGINMODEL::login() verify password PASSED');
         return $this;
       } else {
-        error_log("LOGINMODEL::LOGIN verify password PASSED");
+        error_log("LOGINMODEL::LOGIN verify password fail");
         return NULL;
       }
     } else {
