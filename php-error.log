@@ -2756,3 +2756,42 @@ Stack trace:
 [27-Jun-2022 08:05:37 UTC]  ============= 
 [27-Jun-2022 08:05:37 UTC] controllers/favicon.ico.php
 [27-Jun-2022 08:05:37 UTC] Render: errors/404
+[29-Jun-2022 13:57:49 UTC]  PHP error log 
+[29-Jun-2022 13:57:49 UTC]  ============= 
+[29-Jun-2022 13:57:50 UTC] SessionController::validateSession()
+[29-Jun-2022 13:57:50 UTC] sessionController::getCurrentPage(): actualLink => /, url => 
+[29-Jun-2022 13:57:50 UTC] sessionController::isPublic(): currentURL => 
+[29-Jun-2022 13:57:50 UTC] SessionCOntrollerÑÑvalidateSession() public page
+[29-Jun-2022 13:57:50 UTC] Render: login/index
+[29-Jun-2022 13:57:50 UTC]  PHP error log 
+[29-Jun-2022 13:57:50 UTC]  ============= 
+[29-Jun-2022 13:57:50 UTC] controllers/favicon.ico.php
+[29-Jun-2022 13:57:50 UTC] Render: errors/404
+[29-Jun-2022 13:58:36 UTC]  PHP error log 
+[29-Jun-2022 13:58:36 UTC]  ============= 
+[29-Jun-2022 13:58:36 UTC] controllers/dashboard.php
+[29-Jun-2022 13:58:36 UTC] SessionController::validateSession()
+[29-Jun-2022 13:58:36 UTC] sessionController::getCurrentPage(): actualLink => /dashboard, url => dashboard
+[29-Jun-2022 13:58:36 UTC] sessionController::isPublic(): currentURL => dashboard
+[29-Jun-2022 13:58:36 UTC] SessionControler::validateSession() redirect al login
+[29-Jun-2022 13:58:36 UTC] SessionController::getUserSessionData() is started
+[29-Jun-2022 13:58:36 UTC] PHP Warning:  Undefined array key "user" in /var/www/html/classes/session.php on line 20
+[29-Jun-2022 13:58:36 UTC] PHP Warning:  Trying to access array offset on value of type bool in /var/www/html/models/User.php on line 34
+[29-Jun-2022 13:58:36 UTC] PHP Warning:  Trying to access array offset on value of type bool in /var/www/html/models/User.php on line 35
+[29-Jun-2022 13:58:36 UTC] PHP Warning:  Trying to access array offset on value of type bool in /var/www/html/models/User.php on line 36
+[29-Jun-2022 13:58:36 UTC] PHP Warning:  Trying to access array offset on value of type bool in /var/www/html/models/User.php on line 37
+[29-Jun-2022 13:58:36 UTC] PHP Warning:  Trying to access array offset on value of type bool in /var/www/html/models/User.php on line 38
+[29-Jun-2022 13:58:36 UTC] PHP Warning:  Trying to access array offset on value of type bool in /var/www/html/models/User.php on line 39
+[29-Jun-2022 13:58:36 UTC] dashboard::render datauser 
+[29-Jun-2022 13:58:36 UTC] Render: dashboard/index
+[29-Jun-2022 13:58:37 UTC]  PHP error log 
+[29-Jun-2022 13:58:37 UTC]  ============= 
+[29-Jun-2022 13:58:37 UTC] SessionController::validateSession()
+[29-Jun-2022 13:58:37 UTC] sessionController::getCurrentPage(): actualLink => /, url => 
+[29-Jun-2022 13:58:37 UTC] sessionController::isPublic(): currentURL => 
+[29-Jun-2022 13:58:37 UTC] SessionCOntrollerÑÑvalidateSession() public page
+[29-Jun-2022 13:58:37 UTC] Render: login/index
+[29-Jun-2022 13:58:37 UTC]  PHP error log 
+[29-Jun-2022 13:58:37 UTC]  ============= 
+[29-Jun-2022 13:58:37 UTC] controllers/favicon.ico.php
+[29-Jun-2022 13:58:37 UTC] Render: errors/404
