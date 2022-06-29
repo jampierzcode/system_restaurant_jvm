@@ -550,3 +550,30 @@
 [29-Jun-2022 17:51:14 UTC]  ============= 
 [29-Jun-2022 17:51:15 UTC] APP::__CONSTRUCT() Archivo del controlador actual -> controllers/images.php
 [29-Jun-2022 17:51:15 UTC] Render: errors/404
+[29-Jun-2022 18:39:32 UTC]  PHP error log 
+[29-Jun-2022 18:39:32 UTC]  ============= 
+[29-Jun-2022 18:39:33 UTC] SessionController::validateSession()
+[29-Jun-2022 18:39:33 UTC] Identificacion del usuario actual -> 9
+[29-Jun-2022 18:39:33 UTC] SessionController::getUserSessionData() is started
+[29-Jun-2022 18:39:33 UTC] SessionController::validateSession() is true user4
+[29-Jun-2022 18:39:33 UTC] SessionController::validateSession() is true admin
+[29-Jun-2022 18:39:33 UTC] sessionController::getCurrentPage(): actualLink => /, url => 
+[29-Jun-2022 18:39:33 UTC] SESSIONCONTROLLER::isPublic currentURL => 
+[29-Jun-2022 18:39:33 UTC] sessionController::isPublic(): currentURL => 
+[29-Jun-2022 18:39:33 UTC] sessionController:validateSession() => sitio publico, redirige al main
+[29-Jun-2022 18:39:33 UTC] Render: login/index
+[29-Jun-2022 18:39:33 UTC]  PHP error log 
+[29-Jun-2022 18:39:33 UTC]  ============= 
+[29-Jun-2022 18:39:33 UTC] APP::__CONSTRUCT() Archivo del controlador actual -> controllers/dashboard.php
+[29-Jun-2022 18:39:33 UTC] SessionController::validateSession()
+[29-Jun-2022 18:39:33 UTC] Identificacion del usuario actual -> 9
+[29-Jun-2022 18:39:33 UTC] SessionController::getUserSessionData() is started
+[29-Jun-2022 18:39:33 UTC] SessionController::validateSession() is true user4
+[29-Jun-2022 18:39:33 UTC] SessionController::validateSession() is true admin
+[29-Jun-2022 18:39:33 UTC] sessionController::getCurrentPage(): actualLink => /dashboard, url => dashboard
+[29-Jun-2022 18:39:33 UTC] SESSIONCONTROLLER::isPublic currentURL => dashboard
+[29-Jun-2022 18:39:33 UTC] sessionController::getCurrentPage(): actualLink => /dashboard, url => dashboard
+[29-Jun-2022 18:39:33 UTC] SessionController::validateSession() => autorizado, lo dejamos pasar
+[29-Jun-2022 18:39:33 UTC] SessionController::getUserSessionData() is started
+[29-Jun-2022 18:39:33 UTC] dashboard::render datauser user4
+[29-Jun-2022 18:39:33 UTC] Render: dashboard/index
